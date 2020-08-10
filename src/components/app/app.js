@@ -2,6 +2,6 @@ import React, { Component } from "react";
 
 export default class App extends Component {
   render() {
-    return <h2>BookStore</h2>;
+    return <h1>App</h1>;
   }
 }
