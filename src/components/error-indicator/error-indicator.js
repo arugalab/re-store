@@ -1,7 +1,7 @@
 import React from "react";
 
 const ErrorIndicator = () => {
-  return <h2>An error has occurred!</h2>;
+  return <h2>Error!</h2>;
 };
 
 export default ErrorIndicator;
