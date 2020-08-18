@@ -4,7 +4,7 @@ import Spinner from "../spinner";
 import ErrorIndicator from "../error-indicator";
 
 import { withBookstoreService } from "../hoc";
-import { fetchBooks, onAddedToCart } from "../../actions";
+import { fetchBooks, bookAddedToCart } from "../../actions";
 import { connect } from "react-redux";
 import { compose } from "../../utils";
 
@@ -58,7 +58,7 @@ const mapStateToProps = ({ books, loading, error }) => ({
 const mapDispatchToProps = (dispatch, { bookstoreService }) => {
   return {
     fetchBooks: fetchBooks(bookstoreService, dispatch),
-    onAddedToCart: (id) => dispatch(onAddedToCart(id)),
+    onAddedToCart: (id) => dispatch(bookAddedToCart(id)),
   };
 };
 
